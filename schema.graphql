@@ -1,0 +1,7 @@
+type Query {
+ helloWorld(customer_key:String,customer_screte:String):String! 
+}
+
+schema {
+ query :Query
+}
