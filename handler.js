@@ -12,8 +12,8 @@ exports.graphql = (event, context, callback) => {
       callback(
         null,
         `You have invoked HelloWorld command with ${
-          consumerKey ?? "key not mentioned"
-        } , ${consumerSecret ?? "secrete missing"}`
+          consumerKey || "key not mentioned"
+        } , ${consumerSecret || "secrete missing"}`
       );
       break;
     }
